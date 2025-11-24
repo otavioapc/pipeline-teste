@@ -1,0 +1,7 @@
+name: projeto_simples_prova
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+dependencies:
+  # Nenhuma dependência de Flutter
+dev_dependencies:
+  test: ^1.25.1 # O pacote de teste que o Dart Puro usa
