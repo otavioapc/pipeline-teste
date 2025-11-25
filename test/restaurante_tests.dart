@@ -1,6 +1,6 @@
 // Arquivo: test/restaurante_tests.dart
 import 'package:test/test.dart'; 
-import 'package:pipeline-teste/lib/restaurante_validator.dart';
+import 'package:pipeline_teste/restaurante_validator.dart';
 
 void main() {
   group('Testes Unitários de Regras de Negócio Robustas (TUCs)', () {
