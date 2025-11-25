@@ -1,6 +1,6 @@
 // Arquivo: test/restaurante_tests.dart
 import 'package:test/test.dart'; 
-import '../lib/restaurante_validator.dart'; // Importa sua lógica de negócio
+import 'package:projeto_simples_prova/restaurante_validator.dart';
 
 void main() {
   group('Testes Unitários de Regras de Negócio Robustas (TUCs)', () {
