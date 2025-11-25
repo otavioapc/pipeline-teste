@@ -1,4 +1,4 @@
-name: pipeline-teste
+name: pipeline_teste
 environment:
   sdk: '>=3.0.0 <4.0.0'
 dependencies:
