@@ -1,32 +1,23 @@
-# Arquivo: .github/workflows/main.yml
-name: Pipeline CI/CD - TESTE DART PURO (Final)
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-  workflow_dispatch: 
-
-jobs:
-  test_pure_dart: 
-    runs-on: ubuntu-latest
-    
+# ...
     steps:
       - name: 1. CODE - Checkout do Repositório
         uses: actions/checkout@v4
 
-      - name: 2. BUILD/TEST SETUP - Configurar Ambiente Dart
+      # 2. BUILD/TEST SETUP: Configurar Ambiente Dart
+      - name: 2. BUILD - Configurar Ambiente Dart
         uses: dart-lang/setup-dart@v1
         with:
           sdk: 'stable' 
       
-      - name: 3. INSTALAR DEPENDENCIAS (Pub Get)
+      # 3. INSTALAR DEPENDENCIAS (Ajustado com working-directory)
+      - name: 3. INSTALAR DEPENDENCIAS
         run: dart pub get 
-
+        working-directory: ./ # Garante que o pub get rode na raiz
+      
+      # 4. TEST: Executar o Teste Unitário (A prova do seu trabalho)
       - name: 4. TEST - Executar Teste Unitário
-        # Este passo roda seus 5 TUCs robustos.
         run: dart test 
-
+        working-directory: ./ # Garante que o teste procure a pasta 'test' na raiz
+      
       - name: 5. MONITOR - Verificar Status Final
         run: echo "Teste Unitário concluído com sucesso."
