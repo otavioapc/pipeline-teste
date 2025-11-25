@@ -1,4 +1,4 @@
-name: projeto_simples_prova
+name: pipeline-teste
 environment:
   sdk: '>=3.0.0 <4.0.0'
 dependencies:
