@@ -2,6 +2,6 @@ name: pipeline_teste
 environment:
   sdk: '>=3.0.0 <4.0.0'
 dependencies:
-  # Nenhuma dependência de Flutter
+  # Nenhuma dependencia Flutter
 dev_dependencies:
-  test: ^1.25.1 # O pacote de teste que o Dart Puro usa
+  test: ^1.25.1 # Pacote de teste Dart Puro
