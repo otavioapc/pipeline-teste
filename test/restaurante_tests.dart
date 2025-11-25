@@ -1,6 +1,6 @@
 // Arquivo: test/restaurante_tests.dart
 import 'package:test/test.dart'; 
-import 'package:pipeline_teste/restaurante_validator.dart'; // Correção de Sintaxe (usa underscore)
+import 'package:pipeline_teste/lib/restaurante_validator.dart'; // Correção de Sintaxe (usa underscore)
 
 void main() {
   group('Testes Unitários de Regras de Negócio Robustas (TUCs)', () {
